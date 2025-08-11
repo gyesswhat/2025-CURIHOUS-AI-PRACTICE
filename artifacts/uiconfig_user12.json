@@ -1,0 +1,333 @@
+{
+  "density": "MID",
+  "style": {
+    "fontScale": 1.1,
+    "buttonSize": "lg",
+    "maxTiles": 6,
+    "contrast": "normal"
+  },
+  "groups": [
+    {
+      "key": "quick",
+      "title": "빠른 실행",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F06",
+          "label": "송금/이체",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "transfer",
+      "title": "이체/계좌",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F11",
+          "label": "계좌 조회",
+          "component": "icon"
+        },
+        {
+          "fid": "F13",
+          "label": "카드 내역",
+          "component": "icon"
+        },
+        {
+          "fid": "F12",
+          "label": "자동이체 관리",
+          "component": "list_item"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "bill",
+      "title": "공과금/정부",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F14",
+          "label": "공과금 납부",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "fx",
+      "title": "외환",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F16",
+          "label": "환율 계산기",
+          "component": "icon"
+        },
+        {
+          "fid": "F15",
+          "label": "해외 송금",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "loan",
+      "title": "대출",
+      "component": "list",
+      "capacity": 5,
+      "layout": {
+        "dense": true,
+        "divider": true,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F08",
+          "label": "대출 신청",
+          "component": "button"
+        },
+        {
+          "fid": "F07",
+          "label": "대출 상환",
+          "component": "list_item"
+        },
+        {
+          "fid": "F05",
+          "label": "대출 조회",
+          "component": "list_item"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "onboarding",
+      "title": "가입상품",
+      "component": "cards",
+      "capacity": 4,
+      "layout": {
+        "cardAspect": 1.4,
+        "gutter": 12,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F04",
+          "label": "주식계좌 개설",
+          "component": "card"
+        },
+        {
+          "fid": "F03",
+          "label": "펀드/해지",
+          "component": "card"
+        },
+        {
+          "fid": "F01",
+          "label": "예금 가입",
+          "component": "card"
+        },
+        {
+          "fid": "F02",
+          "label": "적금 가입",
+          "component": "card"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "wealth",
+      "title": "자산관리",
+      "component": "cards",
+      "capacity": 6,
+      "layout": {
+        "cardAspect": 1.4,
+        "gutter": 12,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F10",
+          "label": "자산 리포트",
+          "component": "card"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "ins",
+      "title": "보험",
+      "component": "list",
+      "capacity": 5,
+      "layout": {
+        "dense": true,
+        "divider": true,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F09",
+          "label": "보험 조회",
+          "component": "list_item"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "card",
+      "title": "카드/결제",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [],
+      "suggest_additions": []
+    },
+    {
+      "key": "others",
+      "title": "더보기",
+      "component": "chips",
+      "capacity": 8,
+      "layout": {
+        "chipSize": "md",
+        "wrap": true,
+        "gutter": 10,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [],
+      "suggest_additions": []
+    }
+  ],
+  "layout_order_flat": [
+    "F06",
+    "F11",
+    "F13",
+    "F12",
+    "F14",
+    "F16",
+    "F15",
+    "F08",
+    "F07",
+    "F05",
+    "F04",
+    "F03",
+    "F01",
+    "F02",
+    "F10",
+    "F09"
+  ],
+  "scores": {
+    "F14": 0.517,
+    "F11": 0.369,
+    "F16": 0.236,
+    "F13": 0.149,
+    "F10": 0.114,
+    "F12": 0.095,
+    "F08": 0.079,
+    "F04": 0.074,
+    "F09": 0.068,
+    "F07": 0.064,
+    "F05": 0.054,
+    "F15": 0.043,
+    "F03": 0.04,
+    "F01": 0.035,
+    "F02": 0.021,
+    "F06": 0.0
+  },
+  "pinned": [
+    "F06"
+  ],
+  "highlight_for_senior": false,
+  "global_suggestions": [],
+  "difficulty_pred": "MID",
+  "ui_density": "MID",
+  "probabilities": {
+    "HIGH": 0.09911998781767001,
+    "LOW": 0.022275126674798303,
+    "MID": 0.8786048855075318
+  },
+  "top_features": [
+    {
+      "feature": "Task Time sec",
+      "contribution": 0.8758940213182446
+    },
+    {
+      "feature": "Tap Path Entropy",
+      "contribution": -0.39890210176693913
+    },
+    {
+      "feature": "First Click sec",
+      "contribution": 0.2522431724312109
+    }
+  ],
+  "contrib_image": "artifacts/contrib_user12.png"
+}
