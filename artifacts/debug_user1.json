@@ -1,0 +1,9 @@
+{
+  "Xt_shape": [
+    1,
+    26
+  ],
+  "n_features": 26,
+  "layout": "n_(f+1)*C -> reshaped(C=3)",
+  "sv_len": 26
+}

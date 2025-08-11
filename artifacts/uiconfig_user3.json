@@ -1,0 +1,46 @@
+{
+  "density": "LOW",
+  "style": {
+    "fontScale": 1.25,
+    "buttonSize": "xl",
+    "maxTiles": 4,
+    "contrast": "high"
+  },
+  "layout_order": [
+    "F06",
+    "F08",
+    "F04",
+    "F03"
+  ],
+  "scores": {
+    "F06": 0.162,
+    "F08": 0.834,
+    "F04": 0.716,
+    "F03": 0.68
+  },
+  "pinned": [
+    "F06"
+  ],
+  "difficulty_pred": "HIGH",
+  "ui_density": "LOW",
+  "probabilities": {
+    "HIGH": 0.9134930237488378,
+    "LOW": 0.00040144998096511313,
+    "MID": 0.08610552627019713
+  },
+  "top_features": [
+    {
+      "feature": "Task Time sec",
+      "contribution": 2.001900621269233
+    },
+    {
+      "feature": "Senior: False",
+      "contribution": 0.5757512531388731
+    },
+    {
+      "feature": "Misclicks",
+      "contribution": 0.5318387659328178
+    }
+  ],
+  "contrib_image": "artifacts/contrib_user3.png"
+}

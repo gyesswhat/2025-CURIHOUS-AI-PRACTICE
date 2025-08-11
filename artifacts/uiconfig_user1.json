@@ -1,0 +1,50 @@
+{
+  "density": "MID",
+  "style": {
+    "fontScale": 1.1,
+    "buttonSize": "lg",
+    "maxTiles": 6,
+    "contrast": "normal"
+  },
+  "layout_order": [
+    "F06",
+    "F05",
+    "F09",
+    "F13",
+    "F16",
+    "F03"
+  ],
+  "scores": {
+    "F06": 0.476,
+    "F05": 0.866,
+    "F09": 0.841,
+    "F13": 0.739,
+    "F16": 0.671,
+    "F03": 0.651
+  },
+  "pinned": [
+    "F06"
+  ],
+  "difficulty_pred": "MID",
+  "ui_density": "MID",
+  "probabilities": {
+    "HIGH": 0.056116277755706434,
+    "LOW": 0.22905867808267064,
+    "MID": 0.714825044161623
+  },
+  "top_features": [
+    {
+      "feature": "Task Time sec",
+      "contribution": 0.4332976063373325
+    },
+    {
+      "feature": "Success sum",
+      "contribution": 0.28524955155991155
+    },
+    {
+      "feature": "Tap Path Entropy",
+      "contribution": 0.2038103121734801
+    }
+  ],
+  "contrib_image": "artifacts/contrib_user1.png"
+}

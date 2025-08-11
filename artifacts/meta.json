@@ -1,0 +1,30 @@
+{
+  "model_type": "lightgbm",
+  "features_categorical": [
+    "age_group",
+    "device_type",
+    "access_time_cluster",
+    "is_senior"
+  ],
+  "features_numeric": [
+    "session_count",
+    "tap_path_entropy",
+    "task_time_sec",
+    "misclicks",
+    "first_click_sec",
+    "scroll_depth",
+    "entry_sum",
+    "entry_mean",
+    "entry_max",
+    "success_mean",
+    "success_sum",
+    "success_max",
+    "recency_mean"
+  ],
+  "classes": [
+    "HIGH",
+    "LOW",
+    "MID"
+  ],
+  "best_iteration": 225
+}
