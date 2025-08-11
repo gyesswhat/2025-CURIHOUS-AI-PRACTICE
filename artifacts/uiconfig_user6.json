@@ -6,20 +6,321 @@
     "maxTiles": 4,
     "contrast": "high"
   },
-  "layout_order": [
+  "groups": [
+    {
+      "key": "quick",
+      "title": "빠른 실행",
+      "component": "icon_grid",
+      "capacity": 4,
+      "layout": {
+        "cols": 2,
+        "gutter": 16,
+        "rowHeight": 84,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        },
+        "itemSize": "xl"
+      },
+      "items": [
+        {
+          "fid": "F06",
+          "label": "송금/이체",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "loan",
+      "title": "대출",
+      "component": "list",
+      "capacity": 3,
+      "layout": {
+        "dense": false,
+        "divider": true,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F05",
+          "label": "대출 조회",
+          "component": "list_item"
+        },
+        {
+          "fid": "F08",
+          "label": "대출 신청",
+          "component": "button"
+        },
+        {
+          "fid": "F07",
+          "label": "대출 상환",
+          "component": "list_item"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "onboarding",
+      "title": "가입상품",
+      "component": "cards",
+      "capacity": 3,
+      "layout": {
+        "cardAspect": 1.6,
+        "gutter": 16,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F01",
+          "label": "예금 가입",
+          "component": "card"
+        },
+        {
+          "fid": "F04",
+          "label": "주식계좌 개설",
+          "component": "card"
+        },
+        {
+          "fid": "F03",
+          "label": "펀드/해지",
+          "component": "card"
+        }
+      ],
+      "suggest_additions": [
+        {
+          "fid": "F02",
+          "label": "적금 가입",
+          "reason": {
+            "score": 0.016,
+            "recency_days": 44.0,
+            "expected_slot": "onboarding"
+          }
+        }
+      ]
+    },
+    {
+      "key": "fx",
+      "title": "외환",
+      "component": "icon_grid",
+      "capacity": 4,
+      "layout": {
+        "cols": 2,
+        "gutter": 16,
+        "rowHeight": 84,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        },
+        "itemSize": "xl"
+      },
+      "items": [
+        {
+          "fid": "F15",
+          "label": "해외 송금",
+          "component": "icon"
+        },
+        {
+          "fid": "F16",
+          "label": "환율 계산기",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "transfer",
+      "title": "이체/계좌",
+      "component": "icon_grid",
+      "capacity": 4,
+      "layout": {
+        "cols": 2,
+        "gutter": 16,
+        "rowHeight": 84,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        },
+        "itemSize": "xl"
+      },
+      "items": [
+        {
+          "fid": "F13",
+          "label": "카드 내역",
+          "component": "icon"
+        },
+        {
+          "fid": "F12",
+          "label": "자동이체 관리",
+          "component": "list_item"
+        },
+        {
+          "fid": "F11",
+          "label": "계좌 조회",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "wealth",
+      "title": "자산관리",
+      "component": "cards",
+      "capacity": 4,
+      "layout": {
+        "cardAspect": 1.6,
+        "gutter": 16,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F10",
+          "label": "자산 리포트",
+          "component": "card"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "ins",
+      "title": "보험",
+      "component": "list",
+      "capacity": 3,
+      "layout": {
+        "dense": false,
+        "divider": true,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F09",
+          "label": "보험 조회",
+          "component": "list_item"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "bill",
+      "title": "공과금/정부",
+      "component": "icon_grid",
+      "capacity": 4,
+      "layout": {
+        "cols": 2,
+        "gutter": 16,
+        "rowHeight": 84,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        },
+        "itemSize": "xl"
+      },
+      "items": [
+        {
+          "fid": "F14",
+          "label": "공과금 납부",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "card",
+      "title": "카드/결제",
+      "component": "icon_grid",
+      "capacity": 4,
+      "layout": {
+        "cols": 2,
+        "gutter": 16,
+        "rowHeight": 84,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        },
+        "itemSize": "xl"
+      },
+      "items": [],
+      "suggest_additions": []
+    },
+    {
+      "key": "others",
+      "title": "더보기",
+      "component": "chips",
+      "capacity": 6,
+      "layout": {
+        "chipSize": "lg",
+        "wrap": true,
+        "gutter": 12,
+        "titleStyle": {
+          "size": 20,
+          "weight": 700
+        }
+      },
+      "items": [],
+      "suggest_additions": []
+    }
+  ],
+  "layout_order_flat": [
     "F06",
     "F05",
+    "F08",
+    "F07",
+    "F01",
+    "F04",
+    "F03",
     "F15",
-    "F01"
+    "F16",
+    "F13",
+    "F12",
+    "F11",
+    "F10",
+    "F09",
+    "F14"
   ],
   "scores": {
-    "F06": 0.64,
-    "F05": 0.683,
-    "F15": 0.655,
-    "F01": 0.59
+    "F05": 0.171,
+    "F01": 0.084,
+    "F15": 0.081,
+    "F10": 0.053,
+    "F04": 0.044,
+    "F13": 0.038,
+    "F16": 0.036,
+    "F09": 0.033,
+    "F08": 0.03,
+    "F14": 0.025,
+    "F12": 0.025,
+    "F06": 0.02,
+    "F03": 0.017,
+    "F02": 0.016,
+    "F07": 0.006,
+    "F11": 0.006
   },
   "pinned": [
     "F06"
+  ],
+  "highlight_for_senior": true,
+  "global_suggestions": [
+    {
+      "fid": "F02",
+      "label": "적금 가입",
+      "reason": {
+        "score": 0.016,
+        "recency_days": 44.0,
+        "expected_slot": "onboarding"
+      }
+    }
   ],
   "difficulty_pred": "HIGH",
   "ui_density": "LOW",

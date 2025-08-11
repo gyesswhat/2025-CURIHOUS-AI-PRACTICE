@@ -6,25 +6,308 @@
     "maxTiles": 6,
     "contrast": "normal"
   },
-  "layout_order": [
+  "groups": [
+    {
+      "key": "quick",
+      "title": "빠른 실행",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F06",
+          "label": "송금/이체",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "transfer",
+      "title": "이체/계좌",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F13",
+          "label": "카드 내역",
+          "component": "icon"
+        },
+        {
+          "fid": "F12",
+          "label": "자동이체 관리",
+          "component": "list_item"
+        },
+        {
+          "fid": "F11",
+          "label": "계좌 조회",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "loan",
+      "title": "대출",
+      "component": "list",
+      "capacity": 5,
+      "layout": {
+        "dense": true,
+        "divider": true,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F05",
+          "label": "대출 조회",
+          "component": "list_item"
+        },
+        {
+          "fid": "F08",
+          "label": "대출 신청",
+          "component": "button"
+        },
+        {
+          "fid": "F07",
+          "label": "대출 상환",
+          "component": "list_item"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "ins",
+      "title": "보험",
+      "component": "list",
+      "capacity": 5,
+      "layout": {
+        "dense": true,
+        "divider": true,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F09",
+          "label": "보험 조회",
+          "component": "list_item"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "onboarding",
+      "title": "가입상품",
+      "component": "cards",
+      "capacity": 4,
+      "layout": {
+        "cardAspect": 1.4,
+        "gutter": 12,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F03",
+          "label": "펀드/해지",
+          "component": "card"
+        },
+        {
+          "fid": "F01",
+          "label": "예금 가입",
+          "component": "card"
+        },
+        {
+          "fid": "F04",
+          "label": "주식계좌 개설",
+          "component": "card"
+        },
+        {
+          "fid": "F02",
+          "label": "적금 가입",
+          "component": "card"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "fx",
+      "title": "외환",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F16",
+          "label": "환율 계산기",
+          "component": "icon"
+        },
+        {
+          "fid": "F15",
+          "label": "해외 송금",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "wealth",
+      "title": "자산관리",
+      "component": "cards",
+      "capacity": 6,
+      "layout": {
+        "cardAspect": 1.4,
+        "gutter": 12,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [
+        {
+          "fid": "F10",
+          "label": "자산 리포트",
+          "component": "card"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "card",
+      "title": "카드/결제",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [],
+      "suggest_additions": []
+    },
+    {
+      "key": "bill",
+      "title": "공과금/정부",
+      "component": "icon_grid",
+      "capacity": 6,
+      "layout": {
+        "cols": 3,
+        "gutter": 12,
+        "rowHeight": 72,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        },
+        "itemSize": "lg"
+      },
+      "items": [
+        {
+          "fid": "F14",
+          "label": "공과금 납부",
+          "component": "icon"
+        }
+      ],
+      "suggest_additions": []
+    },
+    {
+      "key": "others",
+      "title": "더보기",
+      "component": "chips",
+      "capacity": 8,
+      "layout": {
+        "chipSize": "md",
+        "wrap": true,
+        "gutter": 10,
+        "titleStyle": {
+          "size": 18,
+          "weight": 700
+        }
+      },
+      "items": [],
+      "suggest_additions": []
+    }
+  ],
+  "layout_order_flat": [
     "F06",
-    "F05",
-    "F09",
     "F13",
+    "F12",
+    "F11",
+    "F05",
+    "F08",
+    "F07",
+    "F09",
+    "F03",
+    "F01",
+    "F04",
+    "F02",
     "F16",
-    "F03"
+    "F15",
+    "F10",
+    "F14"
   ],
   "scores": {
-    "F06": 0.476,
-    "F05": 0.866,
-    "F09": 0.841,
-    "F13": 0.739,
-    "F16": 0.671,
-    "F03": 0.651
+    "F13": 0.284,
+    "F05": 0.281,
+    "F09": 0.248,
+    "F03": 0.095,
+    "F12": 0.081,
+    "F08": 0.072,
+    "F16": 0.069,
+    "F01": 0.05,
+    "F15": 0.048,
+    "F04": 0.041,
+    "F06": 0.04,
+    "F10": 0.039,
+    "F07": 0.017,
+    "F11": 0.012,
+    "F02": 0.0,
+    "F14": 0.0
   },
   "pinned": [
     "F06"
   ],
+  "highlight_for_senior": false,
+  "global_suggestions": [],
   "difficulty_pred": "MID",
   "ui_density": "MID",
   "probabilities": {
